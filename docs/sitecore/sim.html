@@ -1,0 +1,362 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>SIMを使ったSitecoreのインストール &mdash; Sitecore 8.x Standalone Installation 1.0 ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="索引"
+              href="../genindex.html"/>
+        <link rel="search" title="検索" href="../search.html"/>
+    <link rel="top" title="Sitecore 8.x Standalone Installation 1.0 ドキュメント" href="../index.html"/>
+        <link rel="up" title="Sitecore のインストール" href="index.html"/>
+        <link rel="next" title="日本語環境のセットアップ" href="setup-japanese.html"/>
+        <link rel="prev" title="インストーラーを使ったSitecoreのインストール" href="installer.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Sitecore 8.x Standalone Installation
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">構築手順:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../prerequisites/index.html">必要なソフトウェア のインストール</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Sitecore のインストール</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="installer.html">インストーラーを使ったSitecoreのインストール</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">SIMを使ったSitecoreのインストール</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sim">SIMのダウンロードとインストール</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">SIMのコンフィグレーション</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sitecore">Sitecoreのインストール</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="setup-japanese.html">日本語環境のセットアップ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../rocks/install.html">Sitecore Rocksのインストール</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Sitecore 8.x Standalone Installation</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Sitecore のインストール</a> &raquo;</li>
+        
+      <li>SIMを使ったSitecoreのインストール</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="simsitecore">
+<h1>SIMを使ったSitecoreのインストール<a class="headerlink" href="#simsitecore" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="contents local topic" id="id1">
+<p class="topic-title first">このページのトピックス</p>
+<ul class="simple">
+<li><a class="reference internal" href="#sim" id="id3">SIMのダウンロードとインストール</a></li>
+<li><a class="reference internal" href="#id2" id="id4">SIMのコンフィグレーション</a></li>
+<li><a class="reference internal" href="#sitecore" id="id5">Sitecoreのインストール</a></li>
+</ul>
+</div>
+<p>このページでは、SIM(Sitecore Instance Manager)を使った、Sitecoreのインストール方法をご紹介します。
+インストーラーを使用した方法に関しては、 <a class="reference internal" href="installer.html"><span class="doc">インストーラーを使ったSitecoreのインストール</span></a> をご参照ください。</p>
+<div class="section" id="sim">
+<h2><a class="toc-backref" href="#id3">SIMのダウンロードとインストール</a><a class="headerlink" href="#sim" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>SIMはMarket Place からインストールページにアクセスできます。<a class="reference external" href="https://marketplace.sitecore.net/Modules/S/Sitecore_Instance_Manager.aspx?sc_lang=en">Sitecore Instance Manager</a> にアクセスします。</p>
+<p><strong>DOWNLOAD</strong> ボタンをクリックします。使用許諾の画面が表示されたら <strong>I AGREE</strong> をクリックします。</p>
+<div class="figure">
+<img alt="../_images/sc-sim01.png" src="../_images/sc-sim01.png" />
+</div>
+<p>ダイアログの中の <strong>Link</strong> をクリックします。</p>
+<div class="figure">
+<img alt="../_images/sc-sim02.png" src="../_images/sc-sim02.png" />
+</div>
+<p>SIMをインストールするページが表示されます。<strong>Install and Launch</strong> をクリックして、インストーラーうダウンロードします。</p>
+<div class="figure">
+<img alt="../_images/sc-sim03.png" src="../_images/sc-sim03.png" />
+</div>
+<div class="admonition note">
+<p class="first admonition-title">注釈</p>
+<p class="last">SIMはClick Once アプリケーションです</p>
+</div>
+<p>ダウンロードが完了すると、自動的に構成ウィザードが始まります。</p>
+</div>
+<div class="section" id="id2">
+<h2><a class="toc-backref" href="#id4">SIMのコンフィグレーション</a><a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>ダウンロードが完了すると、Configuration Wizard が開始されます。ここで、初期設定を行います。ここで設定した内容はあとから変更できます。<strong>Next</strong> をクリックします。</p>
+<div class="figure">
+<img alt="../_images/sc-sim04.png" src="../_images/sc-sim04.png" />
+</div>
+<p>ライセンスアグリーメント画面が表示されたら <strong>Next</strong> をクリックして、インストーラーうダウンロードします。</p>
+<p>Instances Root Folderという画面が表示されたら、Sitecore のインストールフォルダーを指定します。デフォルトでは、 <code class="docutils literal"><span class="pre">C:\inetpub\wwwroot</span></code> です。 <strong>Next</strong> をクリックします。</p>
+<div class="figure">
+<img alt="../_images/sc-sim06.png" src="../_images/sc-sim06.png" />
+</div>
+<p>次に、 Local Repository and Sitecore License という画面が表示されます。ここで、Sitecore の zip形式のインストールファイルを配置するリポジトリフォルダーとインストール時に使用するライセンスファイルを指定します。<em>LOCLA REPOSITORY</em> の […] ボタンをクリックして、Sitecoreインストール用のzipファイルを保存するフォルダーを指定します。 <em>SITECORE LICENSE</em> の […] ボタンをクリックして、使用するライセンスファイルを選択します。<strong>次へ</strong> をクリックします。</p>
+<div class="figure">
+<img alt="../_images/sc-sim07.png" src="../_images/sc-sim07.png" />
+</div>
+<p>SQL Serverへの接続文字列の設定をします。 sa ユーザー化 sys_admin ロールのユーザーを指定して、SQL Server に接続を行うように構成します。<strong>次へ</strong> をクリックします。</p>
+<div class="figure">
+<img alt="../_images/sc-sim08.png" src="../_images/sc-sim08.png" />
+</div>
+<p>File System Permissions 画面が表示されます。 <strong>Grant</strong> ボタンをクリックして、 Network Service ユーザーに Sitecoreをインストールするフォルダー配下に適切な権限を付与します。この例では、デフォルトの <code class="docutils literal"><span class="pre">C:\inetpub\wwwrooot</span></code> が対象になります。</p>
+<div class="figure">
+<img alt="../_images/sc-sim09.png" src="../_images/sc-sim09.png" />
+</div>
+<p>権限の割り当てに成功すると、 次のダイアログが表示されます。</p>
+<div class="figure">
+<img alt="../_images/sc-sim10.png" src="../_images/sc-sim10.png" />
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">警告</p>
+<p class="last">権限の割り当てに失敗する場合は、 SQL Server のサービスアカウントが、 Network Service で実行されているか確認して下さい。</p>
+</div>
+<p>Grant ボタンの処理に成功したら、 <strong>Next</strong> をクリックします。</p>
+<p>Completed 画面が表示されたら <strong>Finish</strong> ボタンをクリックして、構成ウィザードを終了します。</p>
+<div class="figure">
+<img alt="../_images/sc-sim11.png" src="../_images/sc-sim11.png" />
+</div>
+</div>
+<div class="section" id="sitecore">
+<h2><a class="toc-backref" href="#id5">Sitecoreのインストール</a><a class="headerlink" href="#sitecore" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>SIMの構成が終わったら、インストールをおこないます。まず最初に SIMでインストール時に使用するSitecore の zipファイルを取得します。
+<a class="reference external" href="https://dev.sitecore.net/Downloads/Sitecore_Experience_Platform.aspx">Developer Portal</a> から利用するSitecore 8.x の zip 形式のファイルをダウンロードします。</p>
+<p>今回は、 <a class="reference external" href="https://dev.sitecore.net/Downloads/Sitecore_Experience_Platform/82/Sitecore_Experience_Platform_82_Update5.aspx">Sitecore 8.2 update 5 のページ</a> からファイルをダウンロードします。</p>
+<p>ページ内の、<em>Download options</em> セクションから、 <cite>Zip archive of the Sitecore site root folder</cite> をクリックして zip ファイルをダウンロードします。</p>
+<div class="figure">
+<img alt="../_images/sc-sim12.png" src="../_images/sc-sim12.png" />
+</div>
+<div class="admonition note">
+<p class="first admonition-title">注釈</p>
+<p class="last">Sitecore の本体及びモジュールをダウンロードするには、Sitecoreの開発者向けの試験に合格している必要があります。</p>
+</div>
+<p>ダウンロードしたファイルを SIMのリポジトリフォルダーに配置します。今回は、SIMの構成時に、<cite>C:SIMRepos</cite> をリポジトリフォルダーとして設定した前提で進めます。</p>
+<div class="figure">
+<img alt="../_images/sc-sim13.png" src="../_images/sc-sim13.png" />
+</div>
+<p>SIMを起動します。<cite>Win + Q</cite> で検索チャームを起動して <cite>SIM</cite> と入力すれば見つかるはずです。ホームタブの <strong>Install Instance</strong> をクリックします。</p>
+<div class="figure">
+<img alt="../_images/sc-sim14.png" src="../_images/sc-sim14.png" />
+</div>
+<p>Installing new instance ダイアログが起動します。 ドロップダウンリストで、インストールするSitecoreのバージョンを選択できます。ここで選べるバージョンは、 SIMのリポジトリフォルダーに配置した zip ファイルにより変わります。</p>
+<p>Site Name などに、パラメーターを設定したら、 <strong>Next</strong> をクリックします。</p>
+<div class="figure">
+<img alt="../_images/sc-sim15.png" src="../_images/sc-sim15.png" />
+</div>
+<p>残りの部分は、デフォルトのまま進めることができます。</p>
+<p>Instance details という画面が表示されたら <strong>Next</strong> をクリックします。</p>
+<p>Modules list という画面が表示されたら <strong>Next</strong> をクリックします。</p>
+<p>Custom Packages という画面が表示されたら <strong>Next</strong> をクリックします。</p>
+<p>インストールするモジュールとパッケージの順番を変更する画面が表示されたら <strong>Next</strong> をクリックします。手順通り進めた場合は、モジュールおよびパッケージはインストールに含まれないので <code class="docutils literal"><span class="pre">No</span> <span class="pre">modules</span> <span class="pre">or</span> <span class="pre">pakcages</span> <span class="pre">selected</span></code> が薄く表示されているはずです。</p>
+<p>インストールが完了すると、Complted 画面が表示されます。 Sitecore の編集画面にアクセスできることを確認するために <strong>Open in Browwser(Sitecore Client)</strong> にチェックしてから <strong>Finish</strong> ボタンをクリックします。使用許諾の画面が表示されたら</p>
+<div class="figure">
+<img alt="../_images/sc-sim16.png" src="../_images/sc-sim16.png" />
+</div>
+<p>ブラウザーが起動して、ラウンチパッドへのログイン画面が表示されたらインストール成功です。</p>
+<div class="figure">
+<img alt="../_images/sc-sim17.png" src="../_images/sc-sim17.png" />
+</div>
+<div class="admonition note">
+<p class="first admonition-title">注釈</p>
+<p class="last">インストール完了画面で、チェックボックスを選択せずに閉じた場合は、ブラウザーを起動して、インストールしたサイトにアクセスしてください。今回の例では <cite>http://v82u5/sitecore</cite> です。</p>
+</div>
+<p>日本語環境をセットアップする場合は <a class="reference internal" href="setup-japanese.html"><span class="doc">日本語環境のセットアップ</span></a> を参照してください。</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="setup-japanese.html" class="btn btn-neutral float-right" title="日本語環境のセットアップ" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="installer.html" class="btn btn-neutral" title="インストーラーを使ったSitecoreのインストール" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, samatsu.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

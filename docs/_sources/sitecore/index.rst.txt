@@ -5,5 +5,6 @@ Sitecore のインストール
 .. toctree:: 
    :maxdepth: 2
 
-   install
+   installer
+   sim
    setup-japanese
