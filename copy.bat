@@ -1,1 +1,0 @@
-robocopy .\_build\html .\docs /mir
