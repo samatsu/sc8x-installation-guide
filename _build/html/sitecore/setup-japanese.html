@@ -1,0 +1,322 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>日本語環境のセットアップ &mdash; Sitecore 8.x Standalone Installation 1.0 ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="索引"
+              href="../genindex.html"/>
+        <link rel="search" title="検索" href="../search.html"/>
+    <link rel="top" title="Sitecore 8.x Standalone Installation 1.0 ドキュメント" href="../index.html"/>
+        <link rel="up" title="Sitecore のインストール" href="index.html"/>
+        <link rel="next" title="Sitecore Rocksのインストール" href="../rocks/install.html"/>
+        <link rel="prev" title="インストーラーを使ったSitecoreのインストール" href="install.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Sitecore 8.x Standalone Installation
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">目次:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../prerequisites/index.html">必要なソフトウェア のインストール</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Sitecore のインストール</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="install.html">インストーラーを使ったSitecoreのインストール</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">日本語環境のセットアップ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">日本語化の設定</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">変更された内容の確認</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../rocks/install.html">Sitecore Rocksのインストール</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Sitecore 8.x Standalone Installation</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Sitecore のインストール</a> &raquo;</li>
+        
+      <li>日本語環境のセットアップ</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>日本語環境のセットアップ<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="contents local topic" id="id2">
+<p class="topic-title first">このページのトピックス</p>
+<ul class="simple">
+<li><a class="reference internal" href="#id3" id="id5">日本語化の設定</a></li>
+<li><a class="reference internal" href="#id4" id="id6">変更された内容の確認</a></li>
+</ul>
+</div>
+<p>Sitecoreをクリーンインストールした直後の環境で、日本語環境をセットアップする方法を記載します。この手順を実施すると次の項目の言語がデフォルトで日本語になります。</p>
+<ul class="simple">
+<li>クライアントアプリケーションのデフォルトのUIの言語</li>
+<li>コンテンツ編集者が編集するデフォルトの言語バージョン</li>
+</ul>
+<div class="section" id="id3">
+<h2><a class="toc-backref" href="#id5">日本語化の設定</a><a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>ブラウザーを起動し、adminフォルダーにあるInstallLanguage.aspx にアクセスします。sc8u5というサイトでSitecoreの編集環境をセットアップしている場合は、<code class="docutils literal"><span class="pre">http://sc8u5/sitecore/admin/InstallLanguage.aspx</span></code> になります。</p>
+<p>ログイン画面が表示されたら admin ユーザーでログインします。</p>
+<div class="figure">
+<img alt="../_images/sc-setupja01.png" src="../_images/sc-setupja01.png" />
+</div>
+<p>ログイン後、install a language が表示されます。</p>
+<div class="figure">
+<img alt="../_images/sc-setupja02.png" src="../_images/sc-setupja02.png" />
+</div>
+<p>ドロップダウンリストから Japanese を選択します(キーボードで <em>japanese</em> とタイプすると簡単に選択できます)。ドロップダウンリストで選択した言語を編集用の言語として追加できます。さらに、<em>Run the website and the Sitecore UI in this language</em> にチェックをつけます。これにより、次の言語がデフォルトで日本語になります。</p>
+<ul class="simple">
+<li>コンテンツエディターなどのクライアントインタフェースのUIの言語</li>
+<li>コンテンツ編集者が編集する言語バージョン</li>
+<li>デフォルトのライブサイト(website)で表示する言語バージョン</li>
+</ul>
+<p><strong>Install</strong> ボタンをクリックして日本語を追加し、デフォルトの言語を日本語バージョンに変更します。</p>
+</div>
+<div class="section" id="id4">
+<h2><a class="toc-backref" href="#id6">変更された内容の確認</a><a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>ブラウザーを起動している場合は、いったんブラウザーを閉じてから、ライブサイトにアクセスします。たとえば、sc8u5という名前でSitecoreをインストールしている場合は、<code class="docutils literal"><span class="pre">http://sc8u5/</span></code> にアクセスします。そうすると、コンテンツが日本語で表示されていることを確認できます。これでライブサイトのコンテンツのデフォルトが日本語になっていることを確認できます。</p>
+<div class="figure">
+<img alt="../_images/sc-setupja05.png" src="../_images/sc-setupja05.png" />
+</div>
+<p>編集環境にログインすると、ラウンチパッドが日本語で表示されます。これでUIがデフォルトで日本語になっていることを確認できます。</p>
+<div class="figure">
+<img alt="../_images/sc-setupja03.png" src="../_images/sc-setupja03.png" />
+</div>
+<p>InstallLangauge.aspxのドロップダウンリストで選択した言語アイテムが <em>/sitecore/system/languages</em> 配下に作成されていることを確認します。</p>
+<div class="figure">
+<img alt="../_images/sc-setupja04.png" src="../_images/sc-setupja04.png" />
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">ちなみに</p>
+<p class="last">言語アイテムを作成することで、編集者はその言語バージョンのアイテムを作成できるようになります。</p>
+</div>
+<p>InstallLangauge.aspx で <em>Run the website and the Sitecore UI in this language</em> にチェックをつけたことにより変更された <em>Sitecore.DefaultLanguage.aspx</em> の中身も確認します。
+<em>&lt;Sitecore instllation folder&gt; /Website/App_Config/Include/Sitecore.DefaultLanguage.config</em> の中身を確認すると、次のように変更されています。<em>ClientLanguage</em> の設定により、クライアントアプリケーションのデフォルトの編集言語が日本語になります。<em>contentLanguage</em> の設定により、デフォルトの変種言語が日本語になります。languageの設定により、デフォルトのライブサイト(website)の紺天狗の言語が日本語(ja-jp)になるようパッチファイルが変更されていることを確認できます。</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;configuration</span> <span class="na">xmlns:patch=</span><span class="s">&quot;http://www.sitecore.net/xmlconfig/&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;sitecore&gt;</span>
+    <span class="nt">&lt;sites&gt;</span>
+    <span class="nt">&lt;site</span> <span class="na">name=</span><span class="s">&quot;website&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;patch:attribute</span> <span class="na">name=</span><span class="s">&quot;language&quot;</span><span class="nt">&gt;</span>ja-JP<span class="nt">&lt;/patch:attribute&gt;</span>
+    <span class="nt">&lt;/site&gt;</span>
+    <span class="nt">&lt;site</span> <span class="na">name=</span><span class="s">&quot;login&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;patch:attribute</span> <span class="na">name=</span><span class="s">&quot;language&quot;</span><span class="nt">&gt;</span>ja-JP<span class="nt">&lt;/patch:attribute&gt;</span>
+    <span class="nt">&lt;/site&gt;</span>
+    <span class="nt">&lt;site</span> <span class="na">name=</span><span class="s">&quot;shell&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;patch:attribute</span> <span class="na">name=</span><span class="s">&quot;contentLanguage&quot;</span><span class="nt">&gt;</span>ja-JP<span class="nt">&lt;/patch:attribute&gt;</span>
+    <span class="nt">&lt;/site&gt;</span>
+    <span class="nt">&lt;/sites&gt;</span>
+    <span class="nt">&lt;settings&gt;</span>
+    <span class="nt">&lt;setting</span> <span class="na">name=</span><span class="s">&quot;ClientLanguage&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;patch:attribute</span> <span class="na">name=</span><span class="s">&quot;value&quot;</span><span class="nt">&gt;</span>ja-JP<span class="nt">&lt;/patch:attribute&gt;</span>
+    <span class="nt">&lt;/setting&gt;</span>
+    <span class="nt">&lt;/settings&gt;</span>
+<span class="nt">&lt;/sitecore&gt;</span>
+<span class="nt">&lt;/configuration&gt;</span>
+</pre></div>
+</div>
+<p>これでSitecore環境のデフォルトの言語を日本語にする作業は完了です。</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../rocks/install.html" class="btn btn-neutral float-right" title="Sitecore Rocksのインストール" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="install.html" class="btn btn-neutral" title="インストーラーを使ったSitecoreのインストール" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, samatsu.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
