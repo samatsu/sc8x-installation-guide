@@ -41,8 +41,8 @@ MongoDBのインストーラーMongoDBのサイト `<https://www.mongodb.com/dow
 
 今回は簡単なインストール方法をご紹介しましたが、詳細については下記ページも参照下さい。
 
-    Install MongoDB on Windows
-    http://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/ 
+    | Install MongoDB on Windows 
+    | `<http://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/>`_
 
 
 Windows サービスとして登録
