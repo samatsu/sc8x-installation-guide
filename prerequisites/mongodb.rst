@@ -76,6 +76,7 @@ MongoDB がWindowsのサービスとして動作するようにします。今�
 次のコマンドを実行して、 Windows サービスとして起動するようにします。
 
 .. code-block:: bat
+
     mongod.exe --config C:\data\service.conf --install 
 
 サービスを起動する場合は、次のコマンドを実行します

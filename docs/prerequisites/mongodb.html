@@ -238,6 +238,9 @@ dbPath : <span class="s2">&quot;C:\\data\\db&quot;</span>
 </div>
 <p>コマンドプロンプトを起動し、MongoDBのbinフォルダーに移動します。今回の場合は <code class="docutils literal"><span class="pre">C:\mongodb\bin</span></code> です。</p>
 <p>次のコマンドを実行して、 Windows サービスとして起動するようにします。</p>
+<div class="highlight-bat"><div class="highlight"><pre><span></span>mongod.exe --config C:\data\service.conf --install
+</pre></div>
+</div>
 <p>サービスを起動する場合は、次のコマンドを実行します</p>
 <div class="highlight-bat"><div class="highlight"><pre><span></span>net start MongoDB
 </pre></div>
