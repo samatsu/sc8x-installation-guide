@@ -1,0 +1,298 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>SQL Serverのセットアップ &mdash; Sitecore 8.x Standalone Installation 1.0 ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="索引"
+              href="../genindex.html"/>
+        <link rel="search" title="検索" href="../search.html"/>
+    <link rel="top" title="Sitecore 8.x Standalone Installation 1.0 ドキュメント" href="../index.html"/>
+        <link rel="up" title="必要なソフトウェア のインストール" href="index.html"/>
+        <link rel="next" title="MongoDBのセットアップ" href="mongodb.html"/>
+        <link rel="prev" title="IISのセットアップ" href="iis.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Sitecore 8.x Standalone Installation
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">構築手順:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">必要なソフトウェア のインストール</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="iis.html">IISのセットアップ</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">SQL Serverのセットアップ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">SQL Serverのインストール</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="mongodb.html">MongoDBのセットアップ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../sitecore/index.html">Sitecore のインストール</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rocks/install.html">Sitecore Rocksのインストール</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Sitecore 8.x Standalone Installation</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">必要なソフトウェア のインストール</a> &raquo;</li>
+        
+      <li>SQL Serverのセットアップ</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sql-server">
+<h1>SQL Serverのセットアップ<a class="headerlink" href="#sql-server" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>SQL Serverのインストールディスクを持っていない場合は、評価版やDeveloperエディションを手に入れてください。</p>
+<div class="section" id="id1">
+<h2>SQL Serverのインストール<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>インストーラーを起動して、下図のような SQL Server インストールセンターを起動します。左のタブから <strong>インストール</strong> を選択します。</p>
+<div class="figure">
+<img alt="../_images/pre-sql01.png" src="../_images/pre-sql01.png" />
+</div>
+<p>中央の画面んから、<strong>SQL Serverの新規スタンドアロン インストールを実行するか、既存のインストール機能を追加します</strong> を選択します。</p>
+<div class="figure">
+<img alt="../_images/pre-sql02.png" src="../_images/pre-sql02.png" />
+</div>
+<p>セットアップウィザードが起動します。</p>
+<p>プロダクトキー画面でプロダクトキーを入力して <strong>次へ</strong> をクリックします。 Developer エディションの場合はプロダクトキーは入力済みです。</p>
+<p>ライセンス画面で、<strong>ライセンス条項画面で、ライセンス条項に同意します。</strong> を選択して、<strong>次へ</strong> をクリックします。</p>
+<p>Microsofot Update画面で、 必要に応じて <strong>Microsoft Updateを使用して更新プログラムを確認する**にチェックをして、 **次へ</strong> をクリックします。</p>
+<p>インストール ルール 画面でエラーがないことを確認して <strong>次へ</strong> をクリックします。</p>
+<p>セットアップ ロールで、 SQL Server 機能のインストールを選択して <strong>次へ</strong> をクリックします。</p>
+<div class="figure">
+<img alt="../_images/pre-sql03.png" src="../_images/pre-sql03.png" />
+</div>
+<p>機能の選択ダイアログで、次の機能を選択して、<strong>次へ</strong> をクリックします。</p>
+<ul class="simple">
+<li>データベース エンジンサービス</li>
+<li>管理ツール - 完全</li>
+</ul>
+<div class="figure">
+<img alt="../_images/pre-sql04.png" src="../_images/pre-sql04.png" />
+</div>
+<div class="figure">
+<img alt="../_images/pre-sql05.png" src="../_images/pre-sql05.png" />
+</div>
+<p>インスタンスの構成画面は、デフォルトのままにして <strong>次へ</strong> をクリックします。</p>
+<p>サーバーの構成画面の <strong>サービスアカウント</strong> タブで、 SQL Server データベースエンジンのユーザーをデフォルトのユーザーから <code class="docutils literal"><span class="pre">Network</span> <span class="pre">Service</span></code> に変更します。ユーザーの変更はドロップダウン から、参照を選択します。</p>
+<div class="figure">
+<img alt="../_images/pre-sql06.png" src="../_images/pre-sql06.png" />
+</div>
+<p><strong>ユーザーまたはグループの選択</strong> ダイアログが表示さるので、Network Service を入力して、 <strong>名前の確認</strong> ボタンで検索できます。<strong>OK</strong> ボタンをクリックして確定したら <strong>次へ</strong> をクリックして画面を進めます。さらに、<strong>SQL Server 管理者の指定</strong> で <strong>現在のユーザーの追加</strong> をクリックして、インストールユーザーをSQL Serverの管理者に追加します。</p>
+<div class="figure">
+<img alt="../_images/pre-sql07.png" src="../_images/pre-sql07.png" />
+</div>
+<p>サーバーの構成タブで、認証モードに <strong>混合モード</strong> を選択し、sa ユーザー用のパスワードを入力します。</p>
+<div class="figure">
+<img alt="../_images/pre-sql08.png" src="../_images/pre-sql08.png" />
+</div>
+<p>インストールの準備完了 画面表示されたら <strong>インストール</strong> をクリックします。</p>
+<div class="figure">
+<img alt="../_images/pre-sql09.png" src="../_images/pre-sql09.png" />
+</div>
+<p>インストールが開始されるので完了するまで待ちます。</p>
+<p>完了画面が表示されたら <strong>閉じる</strong> をクリックしてインストールは完了です。再起動は不要のはずですが、念のため再起動します。</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="mongodb.html" class="btn btn-neutral float-right" title="MongoDBのセットアップ" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="iis.html" class="btn btn-neutral" title="IISのセットアップ" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, samatsu.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

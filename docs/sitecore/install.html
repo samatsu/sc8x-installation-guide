@@ -1,0 +1,325 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>インストーラーを使ったSitecoreのインストール &mdash; Sitecore 8.x Standalone Installation 1.0 ドキュメント</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="索引"
+              href="../genindex.html"/>
+        <link rel="search" title="検索" href="../search.html"/>
+    <link rel="top" title="Sitecore 8.x Standalone Installation 1.0 ドキュメント" href="../index.html"/>
+        <link rel="up" title="Sitecore のインストール" href="index.html"/>
+        <link rel="next" title="日本語環境のセットアップ" href="setup-japanese.html"/>
+        <link rel="prev" title="Sitecore のインストール" href="index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Sitecore 8.x Standalone Installation
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">構築手順:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../prerequisites/index.html">必要なソフトウェア のインストール</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Sitecore のインストール</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">インストーラーを使ったSitecoreのインストール</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Sitecore のダウンロード</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Sitecore のインストール</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Sitecore クライアントインタフェースにログイン</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="setup-japanese.html">日本語環境のセットアップ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../rocks/install.html">Sitecore Rocksのインストール</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Sitecore 8.x Standalone Installation</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Sitecore のインストール</a> &raquo;</li>
+        
+      <li>インストーラーを使ったSitecoreのインストール</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sitecore">
+<h1>インストーラーを使ったSitecoreのインストール<a class="headerlink" href="#sitecore" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="contents local topic" id="id1">
+<p class="topic-title first">このページのトピックス</p>
+<ul class="simple">
+<li><a class="reference internal" href="#id2" id="id6">Sitecore のダウンロード</a></li>
+<li><a class="reference internal" href="#id4" id="id7">Sitecore のインストール</a></li>
+<li><a class="reference internal" href="#id5" id="id8">Sitecore クライアントインタフェースにログイン</a></li>
+</ul>
+</div>
+<p>このページでは、Sitecore 8.2 をインストーラーを使用してインストールする方法を記載します。</p>
+<div class="section" id="id2">
+<h2><a class="toc-backref" href="#id6">Sitecore のダウンロード</a><a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><a class="reference external" href="https://dev.sitecore.net/">Developer Portal</a> からSitecoreの本体および、オフィシャルにサポートされるアドオンモジュールをダウンロードできます。<a class="reference external" href="https://dev.sitecore.net/">Developer Portal</a> のトップにあるリンクから最新バージョンをダウンロードできます。 <a class="reference external" href="https://dev.sitecore.net/Downloads/Sitecore_Experience_Platform.aspx">このページ</a> から、自分がインストールしたい任意のSitecoreのバージョンのダウンロードページに移動することができます。</p>
+<p>Sitecoreのダウンロードページにいどうしたら、 Download options セクションの、 Sitecore web application installer をクリックしてダウンロードします。このドキュメントでは、下図のように Sitecore 8.2 update-5をインストールします。 Sitecore 8のほかのバージョンでもインストール手順に大きな違いはありません。</p>
+<div class="figure">
+<img alt="../_images/sc8install01.png" src="../_images/sc8install01.png" />
+</div>
+<div class="admonition note">
+<p class="first admonition-title">注釈</p>
+<p class="last">Sitecore本体およびアドオンモジュールをダウンロードするには、Sitecoreの開発者向けの認定試験に合格している必要があります。</p>
+</div>
+<p>ダウンロードした zip ファイルを右クリック &gt; プロパティ　をクリックしてプロパティーダイアログを表示します。<strong>ブロックの解除</strong> をクリックしてOKをクリックしてください。</p>
+</div>
+<div class="section" id="id4">
+<h2><a class="toc-backref" href="#id7">Sitecore のインストール</a><a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>zip ファイルを展開して、インストーラーをダブルクリックします。 Sitecore 8.2 update-5の場合のファイル名は、<code class="docutils literal"><span class="pre">Sitecore</span> <span class="pre">8.2</span> <span class="pre">rev.</span> <span class="pre">170728.exe</span></code> です。</p>
+<div class="figure">
+<img alt="../_images/sc8install02.png" src="../_images/sc8install02.png" />
+</div>
+<p>次の図のようなインストーラーが起動するので、<strong>次へ</strong>　をクリックします。</p>
+<div class="figure">
+<img alt="../_images/sc8install03.png" src="../_images/sc8install03.png" />
+</div>
+<p>使用許諾画面で、 <strong>完全</strong> を選択して、<strong>次へ</strong> をクリック。</p>
+<p>インストールの種類の選択画面で <strong>完全</strong> を選択して <strong>次へ</strong> をクリック。</p>
+<div class="figure">
+<img alt="../_images/sc8install10.png" src="../_images/sc8install10.png" />
+</div>
+<p>インスタンス名の画面で、インスタンス名を入力して次へをクリック。今回は sc8u5 という名前でインストールを実施する前提とします。</p>
+<div class="figure">
+<img alt="../_images/sc8install04.png" src="../_images/sc8install04.png" />
+</div>
+<p>ライセンス ファイル 画面で、ライセンスファイルを選択して、 <strong>次へ</strong> をクリックします。</p>
+<p>データベースサーバーの画面で、SQL Serverへの接続情報を入力して次へをクリックします。SQL　Server に接続するユーザーは sa などの管理者ユーザーか、sys_adminロールのユーザーを指定してください。</p>
+<div class="figure">
+<img alt="../_images/sc8install05.png" src="../_images/sc8install05.png" />
+</div>
+<p>インストール先のフォルダー画面はデフォルトのまま、<strong>次へ</strong> をクリックします。</p>
+<div class="figure">
+<img alt="../_images/sc8install06.png" src="../_images/sc8install06.png" />
+</div>
+<div class="admonition note">
+<p class="first admonition-title">注釈</p>
+<p class="last">デフォルトでは C:inetpubwwwroot 配下にSitecoreインスタンス名のフォルダーを作成してその配下に必要なファイルがインストールされます。</p>
+</div>
+<p>インストール内容のサマリー画面が表示されたら <strong>インストール</strong> をクリックします。
+.. figure:: /images/sitecore/sc8install07.png</p>
+<p>しばらくするとインストールが完了して、次の図が表示されます。完了をクリックして続いて、SitecoreクライアントインタフェースのUIおよび編集言語をデフォルトで日本語にしたい場合は、<strong>Sitecore を起動します</strong> を選択して、画面を閉じます。</p>
+<div class="figure">
+<img alt="../_images/sc8install08.png" src="../_images/sc8install08.png" />
+</div>
+<div class="admonition seealso">
+<p class="first admonition-title">参考</p>
+<p class="last">日本語をデフォルトに設定する方法に関しては <a class="reference internal" href="setup-japanese.html"><span class="doc">日本語環境のセットアップ</span></a> を参照して下さい。</p>
+</div>
+</div>
+<div class="section" id="id5">
+<h2><a class="toc-backref" href="#id8">Sitecore クライアントインタフェースにログイン</a><a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>インストールが終わったら、編集環境にログインして動作確認をします。ブラウザーを起動して、サイトコアをインストールしたサイト名を使用してログイン画面にアクセスします。このドキュメントでは sc8u5 というサイト名を使ってインストールしていますので、 <code class="docutils literal"><span class="pre">http://sc8u5/sitecore</span></code> になります。</p>
+<div class="figure">
+<img alt="../_images/sc8install09.png" src="../_images/sc8install09.png" />
+</div>
+<p>デフォルトの管理者アカウント admin/b でログインできたら完了です。</p>
+<div class="admonition note">
+<p class="first admonition-title">注釈</p>
+<p class="last">本番で使う環境の場合はパスワードはすみやかに変更するか、別の管理者ユーザーを作成してadminユーザーを無効化します。</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="setup-japanese.html" class="btn btn-neutral float-right" title="日本語環境のセットアップ" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Sitecore のインストール" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, samatsu.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
