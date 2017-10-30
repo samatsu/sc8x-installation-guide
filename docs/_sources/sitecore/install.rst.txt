@@ -18,7 +18,7 @@ Sitecore のダウンロード
 
 `Developer Portal`_ からSitecoreの本体および、オフィシャルにサポートされるアドオンモジュールをダウンロードできます。`Developer Portal`_ のトップにあるリンクから最新バージョンをダウンロードできます。 `このページ <https://dev.sitecore.net/Downloads/Sitecore_Experience_Platform.aspx>`_ から、自分がインストールしたい任意のSitecoreのバージョンのダウンロードページに移動することができます。
 
-Sitecoreのダウンロードページにいどうしたら、 Download options セクションの、 Sitecore web application installer をクリックしてダウンロードします。このドキュメントでは、下図のように Sitecore 8.2 update-5をインストールします。 Sitecore 8のほかのバージョンでもインストール手順に大きな違いはありません。
+Sitecoreのダウンロードページに移動したら、 *Download options* セクションの、 *Sitecore web application installer* をクリックしてダウンロードします。このドキュメントでは、下図のように Sitecore 8.2 update-5をインストールします。 Sitecore 8のほかのバージョンでもインストール手順に大きな違いはありません。
 
 .. figure:: /images/sitecore/sc8install01.png
 
