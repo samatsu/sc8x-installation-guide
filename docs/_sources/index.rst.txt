@@ -3,9 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Sitecore 8.x スタンドローン環境セットアップガイド
+Sitecore 8.x スタンドアロン環境セットアップガイド
 ================================================================
-このドキュメントではSitecoreの開発者向けに Sitecore 8.x に対応したスタンドアローンインストレーション環境を開発用にセットアップする方法を記載します。
+このドキュメントではSitecoreの開発者向けに Sitecore 8.x に対応したスタンドアロンインストレーション環境を開発用にセットアップする方法を記載します。
 
 構築に利用した各ソフトウェアのバージョンは次の通りです。
 
