@@ -11,7 +11,7 @@ MongoDBのインストーラーMongoDBのサイト `<https://www.mongodb.com/dow
 
 .. figure:: /images/prerequisites/pre-mongo01.png
 
-今回は、一覧のページから、 ３.2.1の最新バージョンの ``mongodb-win32-x86_64-2008plus-ssl-3.2.17-signed.msi`` をクリックしてダウンロードしました。
+今回は、一覧のページから、 ３.2.1 の最新バージョンの ``mongodb-win32-x86_64-2008plus-ssl-3.2.17-signed.msi`` をクリックしてダウンロードしました。
 
 .. figure:: /images/prerequisites/pre-mongo02.png
 

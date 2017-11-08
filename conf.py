@@ -46,7 +46,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Sitecore 8.x Standalone Installation'
+project = 'クイックセットアップガイド'
 copyright = '2017, samatsu'
 author = 'samatsu'
 
@@ -55,7 +55,7 @@ author = 'samatsu'
 # built documents.
 #
 # The short X.Y version.
-version = '1.0'
+version = 'Sitecore Experience Platform 8'
 # The full version, including alpha/beta/rc tags.
 release = '1.0'
 
